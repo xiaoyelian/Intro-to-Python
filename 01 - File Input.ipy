@@ -91,8 +91,20 @@ YT[['pickup','dropoff','duration']].head()
 
 # Deleting rows ("observations") that we don't want/need
 
-YT
+YT['trip_distance'].describe()
+
+YT['valid'] = YT['trip_distance'] <= 100
+
+YT[['trip_distance','valid']].head()
 
 YT['trip_distance'].describe()
 
-YT = 
+YT = YT[YT.valid == True]
+
+YT['trip_distance'].describe()
+
+# Saving our altered data set
+
+YT.to_csv('Yellow_Saved.csv', index = False)
+
+
