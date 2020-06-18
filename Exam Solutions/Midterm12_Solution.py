@@ -17,6 +17,7 @@ def descriptive(myList):
     print(f'The median is: {median}')
     print(f'The sample standard deviation is: {stdev}')
     print(f'The population standard deviation is: {pstdev}')
+    print()
     values[0]=statistics.mean(myList)
     values[1]=statistics.median(myList)
     values[2]=statistics.stdev(myList)
