@@ -8,12 +8,8 @@ import random
 import numpy as np
 
 values = [1,10,100,1_000,10_000,100_000,1_000_000]
-rolls_list = []
 times_list = []
-rolls_array = []
 times_array = []
-time_temp = 0
-counter = len(values) - 1
 
 for i in range (0, 7):
    print(f'Loop: {i}             Number of values: {values[i]:,}')
